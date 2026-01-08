@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/guard.js"></script>
+</head>
+<body>
+<div class="container">
+
+<h1>Archive</h1>
+
+<p style="opacity:0.85;">
+I was once whole, now I am scattered.<br>
+The path you seek is not in the open — it walks <b>backwards</b> through the tree.<br>
+The flag you want is not the flag you need.<br>
+Ask for the ancestor’s banner and the gate shall whisper a song of sixty-four.
+</p>
+
+<pre id="out"></pre>
+
+<script>
+const files = {
+  "notes.txt": "Just some boring notes…",
+  "log.txt": "System initialized.",
+  "clue.txt": "Try looking deeper.",
+
+  // decoys
+  "../../etc/passwd": "root:x:0:0:root:/root:/bin/bash",
+  "../config.php": "define('DEBUG', false);",
+
+  // the real riddle target
+  "../../flag.txt": "aHR0cHM6Ly9wYXN0ZWJpbi5jb20vOHI1R1J4Yzc="
+};
+
+const params = new URLSearchParams(window.location.search);
+const f = params.get("file");
+
+if (f && files[f]) {
+  document.getElementById("out").innerText = files[f];
+}
+</script>
+
+</div>
+</body>
+</html>
