@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/guard.js"></script>
+</head>
+<body>
+<div class="container">
+<h1>Injection Point</h1>
+
+<input id="payload" placeholder="Enter payload">
+<button onclick="run()">Execute</button>
+
+<div id="out"></div>
+
+<script>
+function run(){
+ let v=document.getElementById("payload").value;
+ if(v.startsWith("<img src=")){
+  document.getElementById("out").innerHTML=
+  "RkxBR3tJTTRHM19CNEszRF9YU1NfM1hQTDAxVF9TVUNDM1NTfQ== | NEXT → Y2lwaGVyLmh0bWw=";
+ }
+}
+</script>
+</div>
+</body>
+</html>

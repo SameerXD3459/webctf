@@ -1,21 +1,26 @@
 body {
-    background: radial-gradient(circle at top, #2b0033, #0d0014);
-    color: #e0b3ff;
-    font-family: 'Courier New', monospace;
-    text-align: center;
+  background: radial-gradient(circle at top, #2b0033, #0d0014);
+  color: #e0b3ff;
+  font-family: 'Courier New', monospace;
+  text-align: center;
 }
-
-.container {
-    max-width: 900px;
-    margin: auto;
-    padding: 40px;
-}
-
-h1 { color: #c266ff; }
+.container { max-width: 900px; margin:auto; padding:40px; }
+h1 { color:#c266ff; text-shadow:0 0 10px #8000ff; }
 
 img {
-    width: 280px;
-    border-radius: 10px;
-    margin: 15px;
-    box-shadow: 0 0 20px #8000ff;
+  width:260px; border-radius:14px; margin:10px;
+  box-shadow:0 0 20px rgba(128,0,255,.6);
+}
+
+button {
+  background:linear-gradient(135deg,#7a00ff,#b300ff);
+  color:white; border:none; padding:12px 26px;
+  border-radius:25px; cursor:pointer;
+  box-shadow:0 0 15px rgba(179,0,255,.7);
+}
+
+input {
+  width:60%; max-width:400px; padding:12px;
+  border-radius:20px; border:2px solid #b300ff;
+  background:#14001e; color:#f3d9ff;
 }
