@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/guard.js"></script>
+</head>
+<body>
+<div class="container">
+<h1>Challenge 2 — Injection Point</h1>
+
+<input id="payload" placeholder="Payload here">
+<button onclick="run()">Execute</button>
+
+<div id="out"></div>
+
+<script>
+function run(){
+    let v = document.getElementById("payload").value;
+    if(v.startsWith("<img src=")){
+        document.getElementById("out").innerHTML =
+        "FLAG{IM4G3_B4S3D_XSS_3XPL01T_SUCC3SS} | NEXT: chall3.html";
+    }
+}
+</script>
+
+</div>
+</body>
+</html>

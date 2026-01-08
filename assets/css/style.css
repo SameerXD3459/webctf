@@ -1,0 +1,21 @@
+body {
+    background: radial-gradient(circle at top, #2b0033, #0d0014);
+    color: #e0b3ff;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+}
+
+h1 { color: #c266ff; }
+
+img {
+    width: 280px;
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 0 0 20px #8000ff;
+}
